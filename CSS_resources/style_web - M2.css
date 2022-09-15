@@ -1,0 +1,150 @@
+/*style_web - M2.css */
+
+@media print{
+  /* apply this rule only on print mediatype. */
+  .screen_only{
+    display: none;
+  }
+}
+
+body{
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.image {
+  flex-basis: 40%
+}
+
+.text {
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.favourite {
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  text-align:center;
+}
+
+h1 {
+  font-family: "Brush Script MT","Lucida Handwriting", Cursive;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  color:black;
+  background-color:#618685;
+  text-align:center
+}
+
+h2 {
+  font-family: "Times New Roman", serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 20%;
+  color:black;
+  background-color:#b1cbbb;
+  text-align:center
+}
+
+p {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color:black;
+  background-color:lightgrey;
+  text-align:left;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  font-size: 18px;
+}
+
+img {
+  margin-left: 10px;
+}
+
+#cursive{
+  font-style: oblique;
+}
+
+ul li {
+  background: lightgrey;
+  color: black;
+  margin: 5px;
+  font-size: 18px;
+  list-style-type: square;
+}
+
+/* formating a table */
+
+/* apply on tables within the #box_table only */
+.box_table>table {
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.box_table>table th, .box_table>table td{
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+.box_table>table th{
+  background-color: lightgrey;
+}
+
+/* specifying different color for even rows */
+.box_table>table tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+.box_table>table tr:hover{
+  background-color: #ffef96;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
