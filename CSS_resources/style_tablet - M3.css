@@ -1,0 +1,67 @@
+/*style_tablet - M3.css */
+
+@media print{
+  /* apply this rule only on print mediatype. */
+  .screen_only{
+    display: none;
+  }
+}
+
+body{
+  background-color: #b9936c;
+}
+
+#cursive{
+  font-style: oblique;
+}
+
+#quote{
+  font-size: 30px;
+  color: white;
+}
+
+.card-title{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  text-decoration-style: solid;
+  padding-bottom: 15px;
+}
+
+p{
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+
+/* formating a table */
+
+/* apply on tables within the #box_table only */
+.box_table>table {
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.box_table>table th, .box_table>table td{
+  border: 1px solid white;
+  padding: 5px;
+  text-align: center;
+}
+
+.box_table>table th{
+  background-color: black;
+}
+
+/* specifying different color for even rows */
+.box_table>table tr{
+  background-color: grey;
+}
+
+.box_table>table tr:hover{
+  background-color: #b2ad7f;
+}
