@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Assignment 2- Project 2</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style_Project2.css" > <!-- Link notation for our CSS stylesheet -->
+  </head>
+
+  <body>
+    <!-- Heading and subheading of this assignment -->
+    <h1 id="Heading"> Welcome to Assignment 02 from Project 02 </h1>
+    <h3 id="subHeading"> Ignacio Antequera Sanchez - CUS 1172 - Web Development </h3>
+    <hr>
+
+    <!-- FORM to allow the user to specify the details of a new task -->
+    <form>
+      <h1>Add New Task</h1> <!-- Title of the form -->
+
+      <!-- We ask for the title of the new task -->
+      <label class="label" for="title"> Title </label><br/>
+      <input id="title" required ></input><br/>
+
+      <!-- Select tag to get the priority of the new task -->
+      <label class="label"> Priority</label><br/>
+      <select>
+        <option value = "low"> Low </option>
+        <option value = "medium"> Medium </option>
+        <option value = "high"> High </option>
+      </select>
+      </br/>
+
+      <!-- Radio button selection to get status of the new task -->
+      <label class="label"> Status </label>
+      <div>
+        <input type="radio" id="pending" name="status" value="pending" checked>
+        <label for="pending">Pending</label>
+        <input type="radio" id="completed" name="status" value="completed">
+        <label for="completed">Completed</label>
+      </div>
+
+      <!-- This is our submit button -->
+      <button id="add_task">Add Task</button>
+  </form>
+  <hr>
+
+  <!-- In this section, we will display the information collected in the previous form -->
+  <div id="tasks">
+    <h1>List of All Tasks</h1>
+    <!-- Tasks will be displayed in different color formats depending on their priority level -->
+    <div id="priorities">
+      <div style="background: red"></div> High Priority
+      <div style="background: orange"></div> Medium Priority
+      <div style="background: black"></div> Low Priority
+    </div>
+    <!-- This is the list where we will add the tasks entered by the user.
+      At first, it is empty because the user has not entered any data yet -->
+    <ul id="all_tasks">
+    </ul>
+  </div>
+
+  <!-- Reference to our JavaScript file -->
+  <script src="script_Project2.js"></script>
+  </body>
+
+</html>
